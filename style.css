@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    
+ }
+
+body {
+    height: 100%;
+    margin: 0px;
+
+}
+
+h1 {
+    padding-top: 2rem;
+    margin: 0px;
+    text-align: center;
+    font-size: 50px;
+    color: whitesmoke;
+}
+
+.top {
+    box-shadow: 3px 15px 25px -12px rgba(18,51,2,0.57);
+    font-family: 'Rubik Mono One', sans-serif;
+    
+    background: linear-gradient(135deg, #193f00 0%,#002821 100%);
+    z-index: 2;
+}
+
+.bottom {
+    background-color: whitesmoke;
+    
+    font-family: 'Permanent Marker', cursive;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+  
+}
+
+.text-input {
+    border: 0px;
+    padding: 1rem;
+    font-size: 1.6rem;
+    width: 30%;
+    font-family: monospace;
+    margin: 1rem 0.2rem;
+    border-radius: 0.5rem;
+    background: hsl(120, 30%, 81%);
+    color: #012501;
+    text-align: right;
+}
+
+.button {
+    background: #ffa600;
+    font-size: 1.4rem;
+    font-family: monospace;
+    color: #012501;
+    border: 0px;
+    padding: 0rem 1rem;
+    height: 61px;
+    margin: 1rem 0.2rem;
+    border-radius: 0.5rem;
+}
+
+.button:hover {
+    background: hsl(39, 100%, 71%);
+    transition: 0.2s ease-in;
+}
+
+.button:active {
+    background: hsl(39, 100%, 92%);
+    box-shadow: rgba(0, 0, 0, 0.8) 3px 3px 10px inset;
+    transition: box-shadow 0.2s ease-in;
+}
