@@ -86,6 +86,7 @@ h1 {
 /* Javascript en standaard dus onzichtbare classes! */
 .errandlist {
     padding: 0.2rem 1rem;
+   
 }
 
 
@@ -96,6 +97,8 @@ h1 {
     color: #193f00;
     padding: 0.3rem 2rem;
     transition: all .3s ease-in-out;
+    display: flex;
+    justify-content: space-between;
 }
 
 .errand:nth-child(even) {
@@ -103,22 +106,31 @@ h1 {
 }
 
 .errand:hover {
-    
     transform: scale(1.01);
 }
 
 .erranddone {
-
+    margin-right: 2rem;
+    padding: 0 0.5rem;
 }
 
 .erranddone:hover {
-
+    background-color: green;
+    cursor: pointer;
 }
 
 .erranddelete {
-
+    /* font-family: monospace; */
+    color: rgb(114, 0, 0);
+    
+    padding: 0 0.5rem;
 }
 
 .erranddelete:hover {
+    background-color: tomato;
+    cursor: pointer;
+}
 
+.checked {
+    text-transform: strikethrough;
 }
