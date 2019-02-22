@@ -101,9 +101,9 @@ h1 {
 
 .errand {
     list-style-type: none;
-    border: 1px solid rgb(189, 189, 189);
+    border: 2px solid #ffcb6b;
     background: grey;
-    color: hsl(39, 100%, 71%);
+    color: #ffcb6b;
     padding: 0.3rem 2rem;
     transition: all .3s ease-in-out;
     display: flex;
@@ -121,30 +121,36 @@ h1 {
 }
 
 .erranddone {
-    margin-right: 2rem;
-    padding: 0.3rem 1rem;
+    margin-left: 5rem;
+    /*padding: 0.3rem 1rem;
     color: whitesmoke;
     font-family: monospace;
-    border-radius: 50px;
+    border-radius: 50px; */
 }
 
-.erranddone:hover {
+/* .erranddone:hover {
     background-color: green;
     transition: 0.5s ease-in-out;
     cursor: pointer;
-}
+} */
 
 .erranddelete {
-    font-family: 'Khula';
-    color: rgb(114, 0, 0);
-    padding: 0 1.2rem;
-    border-radius: 60px;
+    background: transparent;
+    font-size: 1.6rem;
+    font-family: 'Khula', sans-serif;
+    color: white;
+    border: 0px;
+    padding: 0rem 2rem;
+    height: 61px;
+    border-radius: 2rem;
 }
 
 .erranddelete:hover {
     background-color: tomato;
     cursor: pointer;
     transition: 0.5s ease-in-out;
+    font-size: 2rem;
+    color: rgb(255, 180, 167);
 }
 
 .checked {
@@ -157,11 +163,13 @@ h1 {
     background: limegreen;
 }
 
-p {
-    margin: 0;
-    padding: 0.3rem 0.7rem;;
+
+
+.erranddelete {
+    text-decoration: none;
 
 }
+
 .hidden {
     display: none;
 }

@@ -10,9 +10,11 @@ button.addEventListener('click', function () {
     if (textInput.value === "") {
     window.alert('Een leeg klusje is geen klusje! Vul wat in!');
     } else {
-        listItem.innerHTML += `<li class="errand"><div class="left">
-        <span class="erranddone">&check;</span><p class="strike">${textInput.value}</p></div><div class="right erranddelete">
-        X</li>`
+        listItem.innerHTML += `<li class="errand"><div class="erranddone">
+        ${textInput.value}</div><button class="erranddelete">
+        X</button></li>`;
+        textInput.value = '';
+        textInput.placeholder = 'Nog meer klusjes?';
     }
 });
 
@@ -22,18 +24,26 @@ const errandDone = document.querySelector(".erranddone");
 const strikeThrough = document.querySelector(".strike");
 const errand = document.querySelector(".errand");
 
+// listItem.addEventListener('click', function (event) {
+//     console.log(event.target.classList);
+//     if (event.target.classList.contains('erranddelete')) {
+//         console.log("is dit 1");
+//         return;
+//     } else {
+//         console.log(event.currentTarget);
+//         event.target.classList.toggle('checked');
+//     }
+
+// });
+
 listItem.addEventListener('click', function (event) {
-    console.log(event.target.classList);
-    if (event.target.classList.contains('erranddelete')) {
-        console.log("is dit 1");
-        return;
+        if (event.target.classList.contains('erranddelete')) {
+        event.target.closest(".errand").remove();
     } else {
-        console.log(event.currentTarget);
-        event.target.classList.toggle('checked');
+    event.target.classList.toggle('checked');
     }
 
 });
-
 
 
 
