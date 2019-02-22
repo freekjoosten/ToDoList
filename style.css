@@ -12,29 +12,33 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: stretch;
+    font-family: 'Khula', sans-serif;
+    font-family: 'Calligraffitti', cursive;
 }
 
 h1 {
     padding-top: 2rem;
+    font-family: 'Khula', sans-serif;
+    font-weight: 100;
     margin: 0px;
     text-align: center;
-    font-size: 50px;
-    color: whitesmoke;
+    font-size: 70px;
+    color: hsl(39, 100%, 71%);
 }
 
 .top {
-    box-shadow: 3px 10px 10px -8px rgba(18,51,2,0.57);
-    font-family: 'Rubik Mono One', sans-serif;
-    border-bottom: 2px solid #ffa600;
-    border-top: 5px solid #ffa600;
-    background: linear-gradient(135deg, #193f00 0%,#002821 100%);
+    
+    font-family: monospace, sans-serif;
+    border-bottom: 1px solid grey;
+    border-top: 5px solid grey;
+    background: whitesmoke;
     z-index: 2;
 }
 
 .bottom {
-    background: linear-gradient(to bottom, #ffa600 0%,#ffb728 100%);
+    background: white;
     font-size: 2rem;
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Calligraffitti', cursive;
     flex: 1;
     padding: 2rem;
     
@@ -48,23 +52,24 @@ h1 {
 
 .text-input {
     border: 0px;
-    padding: 1rem;
+    
+    padding: 0rem 1rem;
     font-size: 1.6rem;
     width: 30%;
-    font-family: monospace;
+    font-family: 'Khula', sans-serif;
     margin: 1rem 0.2rem;
     border-radius: 0.5rem;
-    background: hsl(120, 30%, 81%);
-    color: #012501;
+    background: white;
+    color: darkgrey;
     text-align: right;
-    box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 2px inset;
+    box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 1px 1px inset;
 }
 
 .button {
-    background: #ffa600;
-    font-size: 1.4rem;
-    font-family: monospace;
-    color: #012501;
+    background: grey;
+    font-size: 1.6rem;
+    font-family: 'Khula', sans-serif;
+    color: white;
     border: 0px;
     padding: 0rem 1rem;
     height: 61px;
@@ -89,20 +94,26 @@ h1 {
    
 }
 
+.left {
+    display: flex;
+    align-items: baseline;
+}
 
 .errand {
     list-style-type: none;
     border: 1px solid rgb(189, 189, 189);
-    background: hsl(120, 30%, 81%);
-    color: #193f00;
+    background: grey;
+    color: hsl(39, 100%, 71%);
     padding: 0.3rem 2rem;
     transition: all .3s ease-in-out;
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
+    cursor: pointer;
 }
 
 .errand:nth-child(even) {
-    background: hsl(44, 65%, 81%);
+    background: darkgrey;
 }
 
 .errand:hover {
@@ -111,26 +122,46 @@ h1 {
 
 .erranddone {
     margin-right: 2rem;
-    padding: 0 0.5rem;
+    padding: 0.3rem 1rem;
+    color: whitesmoke;
+    font-family: monospace;
+    border-radius: 50px;
 }
 
 .erranddone:hover {
     background-color: green;
+    transition: 0.5s ease-in-out;
     cursor: pointer;
 }
 
 .erranddelete {
-    /* font-family: monospace; */
+    font-family: 'Khula';
     color: rgb(114, 0, 0);
-    
-    padding: 0 0.5rem;
+    padding: 0 1.2rem;
+    border-radius: 60px;
 }
 
 .erranddelete:hover {
     background-color: tomato;
     cursor: pointer;
+    transition: 0.5s ease-in-out;
 }
 
 .checked {
-    text-transform: strikethrough;
+    text-decoration: line-through;
+    background: green;
+}
+
+.checked:nth-child(even) {
+    text-decoration: line-through;
+    background: limegreen;
+}
+
+p {
+    margin: 0;
+    padding: 0.3rem 0.7rem;;
+
+}
+.hidden {
+    display: none;
 }
