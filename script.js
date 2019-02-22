@@ -22,14 +22,14 @@ const errandDone = document.querySelector(".erranddone");
 const strikeThrough = document.querySelector(".strike");
 const errand = document.querySelector(".errand");
 
-errand.addEventListener('click', function (event) {
+listItem.addEventListener('click', function (event) {
     console.log(event.target.classList);
     if (event.target.classList.contains('erranddelete')) {
         console.log("is dit 1");
         return;
     } else {
-        console.log("toch 2");
-        event.currentTarget.classList.toggle('checked');
+        console.log(event.currentTarget);
+        event.target.classList.toggle('checked');
     }
 
 });
