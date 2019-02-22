@@ -104,7 +104,7 @@ h1 {
     border: 2px solid #ffcb6b;
     background: grey;
     color: #ffcb6b;
-    padding: 0.3rem 2rem;
+    padding: 0.3rem 1rem 0.3rem 5rem;
     transition: all .3s ease-in-out;
     display: flex;
     justify-content: space-between;
@@ -121,7 +121,7 @@ h1 {
     transform: scale(1.01);
 }
 
-.erranddone {
+.done {
     margin-left: 5rem;
 }
 
@@ -168,6 +168,14 @@ h1 {
     z-index: 2;
 }
 
+.visible {
+    font-size: 50px;
+    font-family: 'Khula', sans-serif;
+    font-weight: 800;
+    text-align: center;
+    margin: 2rem 34rem;
+    color: grey;
+}
 
 .hidden {
     display: none;

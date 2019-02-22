@@ -1,6 +1,7 @@
 const textInput = document.querySelector(".text-input");
 const button = document.querySelector(".button");
 const listItem = document.querySelector(".errandlist");
+const deleteThis = document.querySelector(".visible");
 
 
 
@@ -10,8 +11,9 @@ button.addEventListener('click', function () {
     if (textInput.value === "") {
     window.alert('Een leeg klusje is geen klusje! Vul wat in!');
     } else {
-        listItem.innerHTML += `<li class="errand"><div class="erranddone">
-        ${textInput.value}</div><button class="erranddelete">
+        deleteThis.classList.add('hidden');
+        listItem.innerHTML += `<li class="errand">
+        ${textInput.value}<button class="erranddelete">
         X</button></li>`;
         textInput.value = '';
         textInput.placeholder = 'Nog meer klusjes?';
@@ -20,9 +22,9 @@ button.addEventListener('click', function () {
 
 
 // Hieronder ben ik aan het rotzooien!
-const errandDone = document.querySelector(".erranddone");
-const strikeThrough = document.querySelector(".strike");
-const errand = document.querySelector(".errand");
+// const errandDone = document.querySelector(".erranddone");
+// const strikeThrough = document.querySelector(".strike");
+// const errand = document.querySelector(".errand");
 
 // listItem.addEventListener('click', function (event) {
 //     console.log(event.target.classList);
